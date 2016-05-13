@@ -16,12 +16,10 @@ public class pasurswurd {
 
 	public boolean check()
 		   {
-			   for (int i =0;i<passwords.size;i++);
-			   try String pasy
-			   if(!pasy(i)).equals(passwords.get(i));
-			   System.exit();
+			   for (int i =0;i<passcodes.size();i++);
+			//   try String pasy
+			   if(!pasy(i)).equals(passcodes.get(i));
+			   System.exit(0);
 		   }
 	// if (one.equals(oneanswer))
-}
-
 }
