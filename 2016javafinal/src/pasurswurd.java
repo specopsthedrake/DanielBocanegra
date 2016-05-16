@@ -1,25 +1,35 @@
 
 import java.util.ArrayList;
-import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 public class pasurswurd {
 
 	private ArrayList<String> passcodes = new ArrayList();
+	private ArrayList<String> messages = new ArrayList();
 
 	public void setpassword() {
 		int passs = Integer.parseInt(JOptionPane.showInputDialog("How many Passwords?"));
-		for (int i = 0; i < passs; i++)
-			passcodes.add(JOptionPane.showInputDialog("What's the passy?"));
+
+		for (int i = 0; i < passs; i++) {
+			String y;
+
+			passcodes.add(JOptionPane.showInputDialog("What's the password?"));
+			messages.add(JOptionPane.showInputDialog("What's the messag for this password?"));
+		}
+	}
+
+	public int check() {
+		for (int i = 0; i < passcodes.size(); i++)
+			// try String pasy
+			if (!JOptionPane.showInputDialog("Enter the password number " + (i + 1)).equals(passcodes.get(i))) {
+				return i - 1;
+			} else {
+				return messages.size();
+			}
+
+		return passcodes.size();
 
 	}
 
-	public boolean check()
-		   {
-			   for (int i =0;i<passcodes.size();i++);
-			//   try String pasy
-			   if(!pasy(i)).equals(passcodes.get(i));
-			   System.exit(0);
-		   }
-	// if (one.equals(oneanswer))
 }
