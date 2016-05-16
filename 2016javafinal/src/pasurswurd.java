@@ -21,14 +21,17 @@ public class pasurswurd {
 
 	public int check() {
 		for (int i = 0; i < passcodes.size(); i++)
-			// try String pasy
+
 			if (!JOptionPane.showInputDialog("Enter the password number " + (i + 1)).equals(passcodes.get(i))) {
 				return i - 1;
-			} else {
-				return messages.size();
 			}
 
 		return passcodes.size();
+
+	}
+
+	public void info() {
+		// TODO Auto-generated method stub
 
 	}
 
