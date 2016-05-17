@@ -6,7 +6,7 @@ public class TheTestClass {
 		pasurswurd x = new pasurswurd();
 		x.setpassword();
 		x.check();
-		x.info();
+		// x.info();
 	}
 
 }
